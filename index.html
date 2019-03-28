@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<div id="particles-js"></div>
 <body>
 
 <div class="jumbotron">
@@ -19,6 +20,11 @@
   </p>
     <a class="btn btn-primary btn-lg" href="https://www.whatismybrowser.com/" role="button">Check out What is my browser</a>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript">
+    particlesJS.load('particles-js', 'particlesjs.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 
 </body>
 </html>
