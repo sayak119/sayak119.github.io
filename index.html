@@ -1,31 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Sayak Kundu</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<div id="particles-js"></div>
-<body>
 
-<div class="jumbotron">
-  <h1 class="display-3">@sayak119</h1>
-  <p class="lead"></p>
-  <hr class="my-4">
-  <p>Codeheat 2017 Pull Requests</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="codeheat.html" role="button">Codeheat 2017 Pull Requests</a>
-    <a class="btn btn-primary btn-lg" href="privacy_policy.html" role="button">Privacy Policy</a>
-  </p>
-    <a class="btn btn-primary btn-lg" href="https://www.whatismybrowser.com/" role="button">Check out What is my browser</a>
-</div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-  <script type="text/javascript">
-    particlesJS.load('particles-js', 'particlesjs.json', function() {
-        console.log('callback - particles.js config loaded');
-    });
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sayak Kundu</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+	<link rel="stylesheet" href="css/index.css"> 
+	<link rel="icon" href="https://avatars.githubusercontent.com/sayak119" type="image/png">
+</head>
+
+<body>
+	<div id="loading">
+		<div id="spinner"></div>
+	</div>
+	<div id="profile">
+		<div id="profile_img" style="background: url(https://avatars.githubusercontent.com/sayak119) center;">
+		</div>
+		<div id="username"><span style="display:block;">Sayak Kundu</span></div>
+		<div id="about">
+			<span id="userbio" style="display: block;">  • &nbsp; Incoming Software Development Engineer at <a class="link"
+        href="https://www.browserstack.com/" target="_blank">BrowserStack</a></span>
+      <span id="userbio" style="display: block;">  • &nbsp; Fourth Year Undergrad Student at <a class="link"
+        href="https://www.iiit.ac.in/" target="_blank"> IIIT Hyderabad </a></span>
+      <span id="userbio" style="display: block;">  • &nbsp; Alexa and Google Action Developer at <a class="link"
+        href="https://archive.org/" target="_blank"> Internet Archive </a></span>
+      <span id="userbio" style="display: block;">  • &nbsp; Former Machine Learning Intern at <a class="link"
+        href="https://www.welcome.ai/artifacia" target="_blank"> Artifacia </a></span>
+		</div>
+		<div id="about">
+			<span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; <a
+					href="mailto: sk.sayakkundu1997@gmail.com">sk.sayakkundu1997@gmail.com</a></span>
+			<span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Hyderabad, India</span>
+			<!--<span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>-->
+      <span style="display:block;"><i class="fas fa-download"></i> &nbsp; <a
+        href="https://drive.google.com/file/d/13w1ythTEr_fOzko3ABBqk20vANnjLc3A/view?usp=sharing" target="_blank">Résumé</a></span>
+			<div class="socials">
+				<span style="display:block;"><a href="https://www.linkedin.com/in/sayak119/" target="_blank"
+						class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+				<span style="display:block;"><a href="https://github.com/sayak119" target="_blank" class="socials"><i
+							class="fab fa-github"></i></a></span>
+			</div>
+			<div class="sidebar__inner "></div>
+		</div>
+	</div>
+	<div id="display">
+		<div id="work">
+			<h1>projects.</h1>
+			<div class="projects" id="work_section">
+				<a href="https://github.com/sayak119/Express" target="_blank">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">Express</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+						<span style="display:block;">Express is a react native app that combines images with verbal cues so that people who lie on the autism spectrum can communicate. </span>
+						</div>
+						<div class="bottom_section">
+                <span style="display:inline-block;"><i class="fab fa-react"></i>&nbsp; React native</span>
+                <span style="display:inline-block;"><i class="fas fa-mobile"></i>&nbsp; Cross Platform</span>
+                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+						</div>
+					</section>
+				</a>
+				<a href="https://github.com/sayak119/KnowMore-Server">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">Know More</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+              <span style="display:block;">A chrome extension that searchs for news articles from reliable sources and Wikipedia articles for a tweet and provides different 
+              perspectives using sentiment analysis. </span>
+						</div>
+						<div class="bottom_section">
+              <span style="display:inline-block;"><i class="fab fa-js-square"></i>&nbsp; JavaScript</span>
+              <span><i class="fab fa-twitter"></i>&nbsp; Twitter</span>
+              <span><i class="fab fa-chrome"></i>&nbsp; Chrome Extension</span>
+							<span><i class="fas fa-star"></i>&nbsp; 5</span>
+						</div>
+					</section>
+				</a>
+				<a href="https://github.com/sayak119/MedPal">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">MedPal</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">Alexa skill for patients to keep record of their medicines and the time when to take it along with the amount.</span>
+						</div>
+						<div class="bottom_section">
+              <span style="display:inline-block;"><i class="fab fa-js-square"></i>&nbsp; JavaScript</span>
+              <span><i class="fab fa-aws"></i>&nbsp; AWS Lambda</span>
+							<span><i class="fas fa-star"></i>&nbsp; 1</span>
+							<span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+						</div>
+					</section>
+				</a>
+				<a href="https://github.com/sayak119/Fake-News-Classification">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">Fake News Classification</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">Fake News Classification using LIAR-PLUS Dataset. LIAR-PLUS is a benchmark dataset for fake news detection.</span>
+						</div>
+						<div class="bottom_section">
+							<span style="display:inline-block;"><i class="fab fa-python"></i>&nbsp; Python</span>
+							<span><i class="fas fa-book"></i>&nbsp; Jupyter Notebook</span>
+							<span><i class="fas fa-language"></i>&nbsp; NLP</span>
+						</div>
+					</section>
+				</a>
+				<a href=https://github.com/sayak119/Amdocs_Vidalysis>
+					<section>
+						<div class="section_title">
+							<span class="alignleft">Vidalysis</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+              <span style="display:block;">A one-stop video analysis solution which contains searching of video using text, live annotation, image searching
+              and automatic video dubbing feature.</span>
+						</div>
+						<div class="bottom_section">
+							<span style="display:inline-block;"><i class="fab fa-python"></i>&nbsp; Python</span>
+              <span><i class="fas fa-video"></i>&nbsp; Video Analysis</span>
+              <span><i class="fab fa-microsoft"></i>&nbsp; Microsoft Computer Vision</span>
+						</div>
+					</section>
+				</a>
+				<a href="https://github.com/sayak119/Priv-chrome-extension">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">Priv</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+              <span style="display:block;">Priv is a chrome extension that provides the user the ability to categorize, summarize, understand and compare Privacy Policies
+                so the users know what they are getting into.<span>
+						</div>
+						<div class="bottom_section">
+							<span style="display:inline-block;"><i class="fab fa-js-square"></i>&nbsp; JavaScript</span>
+              <span><i class="fas fa-language"></i>&nbsp; NLP</span>
+              <span style="display:inline-block;"><i class="fab fa-python"></i>&nbsp; Python</span>
+              <span><i class="fab fa-chrome"></i>&nbsp; Chrome Extension</span>
+						</div>
+					</section>
+				</a>
+      </div>
+			<div id="forks" style="display:none;">
+				<h1>Forks.</h1>
+				<div class="projects" id="forks_section"></div>
+			</div>
+			<div id="blog_section">
+				<h1>Blog.</h1>
+				<div id="blogs"></div>
+			</div>
+			<div id="footer">
+			</div>
+    </div>
+  </div>
+		<script type="text/javascript">
+			setTimeout(function () {
+				document.getElementById("loading").classList.add("animated");
+				document.getElementById("loading").classList.add("fadeOut");
+				setTimeout(function () {
+					document.getElementById("loading").classList.remove("animated");
+					document.getElementById("loading").classList.remove("fadeOut");
+					document.getElementById("loading").style.display = "none";
+				}, 800);
+			}, 1500);
+			$.getJSON("blog.json", function (blog) {
+				blog = blog || [];
+				if (blog.length == 0) {
+					return (document.getElementById("blog_section").style.display =
+						"none");
+				}
+				for (var i = 0; i < blog.length; i++) {
+					$("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+				}
+			}).fail(function () {
+				return (document.getElementById("blog_section").style.display = "none");
+			});
+    </script>
+
+		<script>
+			const magicProjectsGrid = new MagicGrid({
+				container: "#work_section",
+				animate: false,
+				gutter: 30, // default gutter size
+				static: true,
+				useMin: false,
+				maxColumns: 2,
+				useTransform: true
+			});
+
+			const magicForksGrid = new MagicGrid({
+				container: "#forks_section",
+				animate: false,
+				gutter: 30, // default gutter size
+				static: true,
+				useMin: false,
+				maxColumns: 2,
+				useTransform: true
+			});
+
+			$("document").ready(() => {
+				magicProjectsGrid.listen();
+				magicForksGrid.listen();
+			});
+		</script>
+
 
 </body>
+
 </html>
